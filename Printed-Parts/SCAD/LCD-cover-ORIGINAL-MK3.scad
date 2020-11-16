@@ -163,6 +163,12 @@ difference()
     translate( [ -66 , 41.3 , -0.4 ] ) cylinder( h = 1, r = 0.8, $fn=30);  
     translate( [ -21 , 41.3 , -0.4 ] ) cylinder( h = 1, r = 0.8, $fn=30);  
 
+    //Branding
+    translate([-67,06,0.6]) rotate([180,0,0]) linear_extrude(height = 2) 
+    { text("Farum Bibliotek",font = "helvetica:style=Bold", size=7, center=true); }
+    translate([19,06,0.6]) rotate([180,0,0]) linear_extrude(height = 2) 
+    { text("CPF",font = "Pirata One:style=Bold", size=8, center=true); }
+
     // front cleanup
     translate( [ -100 , -64 , 0 ] ) cube( [ 200 , 50 , 50 ] ); 
 
